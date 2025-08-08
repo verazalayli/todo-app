@@ -4,3 +4,5 @@ db:
   user: user
   name: postgres
   sslmode: disable
+
+port: 8000
