@@ -2,7 +2,7 @@ package service
 
 import "todo-app/pkg/repository"
 
-type Autorization interface {
+type Authorization interface {
 }
 
 type TodoList interface {
@@ -12,11 +12,11 @@ type TodoItem interface {
 }
 
 type Service struct {
-	Autorization
+	Authorization
 	TodoList
 	TodoItem
 }
 
-func NewService(repos repository.Autorization) *Service {
+func NewService(repos repository.Authorization) *Service {
 	return &Service{}
 }
